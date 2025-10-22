@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.75rem;
+}
+
+.secaoPrincipal {
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.InputTexto {
+    width: 160px;
+    padding: 1px 3px;
+    outline: none;
+}
+
+.containerBotoes {
+    width: 160px;
+    padding: 5px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    padding: 3px;
+    border-radius: 3px;
+    border: solid 1px #4C4C4D;
+    cursor: pointer;
+}
+
+
+
