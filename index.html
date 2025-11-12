@@ -16,15 +16,23 @@
   </head>
   <body>
     <section class="secaoPrincipal">
+      <div class="containerTituloLogo">
+        <h1 class="titulo"><img class="logo" src="icons/Logo-tT-16px.png" alt="Logo tT de 16px">TRANSFORME textos</h1>
+      </div>  
       <div class="containerInput">
-        <input type="text" name="Texto" id="InputTexto" class="InputTexto" placeholder="Digite o texto aqui" />
+        <input type="text" name="Texto" id="inputTexto" class="inputTexto" placeholder="Digite o texto aqui" />
       </div>
       <div class="containerBotoes" >
-        <button class="botao maiusculo">MAIÚSCULA</button>
-        <button class="botao minusculo">minúscula</button>
+        <button class="botao maiusculo" id="botaoMaiusculo" >MAIÚSCULA</button>
+        <button class="botao minusculo" id="botaoMinusculo" >minúscula</button>
       </div>
       <div class="containerResultado">
-        <p1 class="resultado">Resultado:</p1>
+        <textarea class="resultado" id="resultado" placeholder="Resultado:" disabled></textarea>
+      </div>
+      <div class="containerSite">
+        <p class="introSite">Para mais opções, visite:
+          <a href="http://tiagoneves.com.br">tiagoneves.com.br</a>
+        </p>
       </div>
     </section>
     <script src="script.js"></script>

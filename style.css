@@ -1,45 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
 }
-
-body {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 0.75rem;
-}
-
 .secaoPrincipal {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px lightgrey;
 }
 
-.InputTexto {
-    width: 160px;
-    padding: 1px 3px;
-    outline: none;
+.containerTituloLogo {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.logo {
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.containerInput {
+  margin-top: 4px;
+}
+
+.inputTexto {
+  width: 160px;
+  padding: 1px 3px;
+  outline: none;
 }
 
 .containerBotoes {
-    width: 160px;
-    padding: 5px 0;
+  width: 160px;
+  padding: 5px 0;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .botao {
-    padding: 3px;
-    border-radius: 3px;
-    border: solid 1px #4C4C4D;
-    cursor: pointer;
+  width: 48%;
+  padding: 3px;
+  border-radius: 3px;
+  border: solid 1px #4c4c4d;
+  cursor: pointer;
 }
 
+.containerResultado {
+  width: 100%;
+  text-align: center;
+}
 
+.resultado {
+  width: 160px;
+  height: 69px;
+  text-align: initial;
+  resize: none;
+  background-color: #f3f3f3;
+  cursor: text;
+}
 
+.containerSite {
+  text-align: center;
+}

@@ -4,6 +4,17 @@
   "manifest_version": 3,
   "description": "Extensão para transformar seus texto em MAIÚSCULA ou minúsculas.",
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/Logo-tT-16px.png",
+      "48": "icons/Logo-tT-48px.png",
+      "128": "icons/Logo-tT-128px.png"
+    }
+    },
+    "icons": {
+      "16": "icons/Logo-tT-16px.png",
+      "48": "icons/Logo-tT-48px.png",
+      "128": "icons/Logo-tT-128px.png",
+      "300": "icons/Logo-tT-300px.png"
     }
 }
