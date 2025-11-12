@@ -24,6 +24,28 @@ botaoCapitalizar.addEventListener("click", function () {
 
 botaoExcluir.addEventListener("click", function () {
     document.querySelector("#inputTexto").value = ""
-    
+
     document.querySelector("#resultado").innerHTML = "Resultado:"
 })
+
+const body = document.body;
+const toggleMode = document.getElementById('mode');
+
+// Mantém o tema escolhido
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-mode');
+}
+
+// Alterna ao clicar no ícone
+toggleMode.addEventListener('click', (e) => {
+  e.preventDefault(); // evita o comportamento padrão do link
+
+  body.classList.toggle('dark-mode');
+
+  // Salva preferência
+  if (body.classList.contains('dark-mode')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+});

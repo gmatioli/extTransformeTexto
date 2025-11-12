@@ -5,6 +5,7 @@
   font-family: "Ubuntu", sans-serif;
   font-size: 12px;
 }
+
 .secaoPrincipal {
   width: 200px;
   height: 200px;
@@ -80,4 +81,43 @@
 
 .containerSite {
   text-align: center;
+}
+
+/* DARK MODE */
+
+.mode {
+  display: flex;
+  justify-content: end;
+  margin: 0 4px 4px 0;
+}
+
+.mode img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+body.dark-mode {
+  background-color: #141313;
+  color: #e0e0e0;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #1e1e1e;
+  color: #f3f3f3;
+  border: 1px solid #333;
+}
+
+body.dark-mode button {
+  background-color: #333;
+  color: #f3f3f3;
+  border: 1px solid #444;
+}
+
+body.dark-mode a {
+  color: #8ab4f8;
+}
+
+body.dark-mode .mode img {
+  filter: invert(1);
 }
